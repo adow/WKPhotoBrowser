@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		682571701A37150B00F117DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6825716F1A37150B00F117DF /* AppDelegate.swift */; };
+		682571721A37150B00F117DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682571711A37150B00F117DF /* ViewController.swift */; };
+		682571751A37150B00F117DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 682571731A37150B00F117DF /* Main.storyboard */; };
+		682571771A37150B00F117DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 682571761A37150B00F117DF /* Images.xcassets */; };
+		6825717A1A37150B00F117DF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 682571781A37150B00F117DF /* LaunchScreen.xib */; };
+		682571861A37150B00F117DF /* WKPhotoBrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682571851A37150B00F117DF /* WKPhotoBrowserTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		682571801A37150B00F117DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 682571621A37150B00F117DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 682571691A37150B00F117DF;
+			remoteInfo = WKPhotoBrowser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6825716A1A37150B00F117DF /* WKPhotoBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKPhotoBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6825716E1A37150B00F117DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6825716F1A37150B00F117DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		682571711A37150B00F117DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		682571741A37150B00F117DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		682571761A37150B00F117DF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		682571791A37150B00F117DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6825717F1A37150B00F117DF /* WKPhotoBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WKPhotoBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		682571841A37150B00F117DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		682571851A37150B00F117DF /* WKPhotoBrowserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKPhotoBrowserTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		682571671A37150B00F117DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6825717C1A37150B00F117DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		682571611A37150B00F117DF = {
+			isa = PBXGroup;
+			children = (
+				6825716C1A37150B00F117DF /* WKPhotoBrowser */,
+				682571821A37150B00F117DF /* WKPhotoBrowserTests */,
+				6825716B1A37150B00F117DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6825716B1A37150B00F117DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6825716A1A37150B00F117DF /* WKPhotoBrowser.app */,
+				6825717F1A37150B00F117DF /* WKPhotoBrowserTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6825716C1A37150B00F117DF /* WKPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				6825716F1A37150B00F117DF /* AppDelegate.swift */,
+				682571711A37150B00F117DF /* ViewController.swift */,
+				682571731A37150B00F117DF /* Main.storyboard */,
+				682571761A37150B00F117DF /* Images.xcassets */,
+				682571781A37150B00F117DF /* LaunchScreen.xib */,
+				6825716D1A37150B00F117DF /* Supporting Files */,
+			);
+			path = WKPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		6825716D1A37150B00F117DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6825716E1A37150B00F117DF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		682571821A37150B00F117DF /* WKPhotoBrowserTests */ = {
+			isa = PBXGroup;
+			children = (
+				682571851A37150B00F117DF /* WKPhotoBrowserTests.swift */,
+				682571831A37150B00F117DF /* Supporting Files */,
+			);
+			path = WKPhotoBrowserTests;
+			sourceTree = "<group>";
+		};
+		682571831A37150B00F117DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				682571841A37150B00F117DF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		682571691A37150B00F117DF /* WKPhotoBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 682571891A37150B00F117DF /* Build configuration list for PBXNativeTarget "WKPhotoBrowser" */;
+			buildPhases = (
+				682571661A37150B00F117DF /* Sources */,
+				682571671A37150B00F117DF /* Frameworks */,
+				682571681A37150B00F117DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WKPhotoBrowser;
+			productName = WKPhotoBrowser;
+			productReference = 6825716A1A37150B00F117DF /* WKPhotoBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6825717E1A37150B00F117DF /* WKPhotoBrowserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6825718C1A37150B00F117DF /* Build configuration list for PBXNativeTarget "WKPhotoBrowserTests" */;
+			buildPhases = (
+				6825717B1A37150B00F117DF /* Sources */,
+				6825717C1A37150B00F117DF /* Frameworks */,
+				6825717D1A37150B00F117DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				682571811A37150B00F117DF /* PBXTargetDependency */,
+			);
+			name = WKPhotoBrowserTests;
+			productName = WKPhotoBrowserTests;
+			productReference = 6825717F1A37150B00F117DF /* WKPhotoBrowserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		682571621A37150B00F117DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "秦 道平";
+				TargetAttributes = {
+					682571691A37150B00F117DF = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					6825717E1A37150B00F117DF = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 682571691A37150B00F117DF;
+					};
+				};
+			};
+			buildConfigurationList = 682571651A37150B00F117DF /* Build configuration list for PBXProject "WKPhotoBrowser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 682571611A37150B00F117DF;
+			productRefGroup = 6825716B1A37150B00F117DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				682571691A37150B00F117DF /* WKPhotoBrowser */,
+				6825717E1A37150B00F117DF /* WKPhotoBrowserTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		682571681A37150B00F117DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				682571751A37150B00F117DF /* Main.storyboard in Resources */,
+				6825717A1A37150B00F117DF /* LaunchScreen.xib in Resources */,
+				682571771A37150B00F117DF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6825717D1A37150B00F117DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		682571661A37150B00F117DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				682571721A37150B00F117DF /* ViewController.swift in Sources */,
+				682571701A37150B00F117DF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6825717B1A37150B00F117DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				682571861A37150B00F117DF /* WKPhotoBrowserTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		682571811A37150B00F117DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 682571691A37150B00F117DF /* WKPhotoBrowser */;
+			targetProxy = 682571801A37150B00F117DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		682571731A37150B00F117DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				682571741A37150B00F117DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		682571781A37150B00F117DF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				682571791A37150B00F117DF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		682571871A37150B00F117DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		682571881A37150B00F117DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6825718A1A37150B00F117DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WKPhotoBrowser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6825718B1A37150B00F117DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WKPhotoBrowser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6825718D1A37150B00F117DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WKPhotoBrowserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WKPhotoBrowser.app/WKPhotoBrowser";
+			};
+			name = Debug;
+		};
+		6825718E1A37150B00F117DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WKPhotoBrowserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WKPhotoBrowser.app/WKPhotoBrowser";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		682571651A37150B00F117DF /* Build configuration list for PBXProject "WKPhotoBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				682571871A37150B00F117DF /* Debug */,
+				682571881A37150B00F117DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		682571891A37150B00F117DF /* Build configuration list for PBXNativeTarget "WKPhotoBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6825718A1A37150B00F117DF /* Debug */,
+				6825718B1A37150B00F117DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6825718C1A37150B00F117DF /* Build configuration list for PBXNativeTarget "WKPhotoBrowserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6825718D1A37150B00F117DF /* Debug */,
+				6825718E1A37150B00F117DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 682571621A37150B00F117DF /* Project object */;
+}
