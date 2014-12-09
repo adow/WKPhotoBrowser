@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +20,17 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+//    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+//        return 1
+//    }
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 30
+    }
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("photo-cell", forIndexPath: indexPath) as WKPhotoBrowserCell
+        cell.titleLabel.text = "cell - \(indexPath.row)"
+        return cell
+    }
 
 }
 

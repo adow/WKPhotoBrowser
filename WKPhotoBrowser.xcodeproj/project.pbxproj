@@ -12,18 +12,9 @@
 		682571751A37150B00F117DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 682571731A37150B00F117DF /* Main.storyboard */; };
 		682571771A37150B00F117DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 682571761A37150B00F117DF /* Images.xcassets */; };
 		6825717A1A37150B00F117DF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 682571781A37150B00F117DF /* LaunchScreen.xib */; };
-		682571861A37150B00F117DF /* WKPhotoBrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682571851A37150B00F117DF /* WKPhotoBrowserTests.swift */; };
+		682571901A37164000F117DF /* WKPhotoBrowserLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6825718F1A37164000F117DF /* WKPhotoBrowserLayout.swift */; };
+		68E6510E1A371A5C00607011 /* WKPhotoBrowserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E6510D1A371A5C00607011 /* WKPhotoBrowserCell.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		682571801A37150B00F117DF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 682571621A37150B00F117DF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 682571691A37150B00F117DF;
-			remoteInfo = WKPhotoBrowser;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6825716A1A37150B00F117DF /* WKPhotoBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKPhotoBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,20 +24,12 @@
 		682571741A37150B00F117DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		682571761A37150B00F117DF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		682571791A37150B00F117DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		6825717F1A37150B00F117DF /* WKPhotoBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WKPhotoBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		682571841A37150B00F117DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		682571851A37150B00F117DF /* WKPhotoBrowserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKPhotoBrowserTests.swift; sourceTree = "<group>"; };
+		6825718F1A37164000F117DF /* WKPhotoBrowserLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKPhotoBrowserLayout.swift; sourceTree = "<group>"; };
+		68E6510D1A371A5C00607011 /* WKPhotoBrowserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKPhotoBrowserCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		682571671A37150B00F117DF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6825717C1A37150B00F117DF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -60,7 +43,6 @@
 			isa = PBXGroup;
 			children = (
 				6825716C1A37150B00F117DF /* WKPhotoBrowser */,
-				682571821A37150B00F117DF /* WKPhotoBrowserTests */,
 				6825716B1A37150B00F117DF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,7 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				6825716A1A37150B00F117DF /* WKPhotoBrowser.app */,
-				6825717F1A37150B00F117DF /* WKPhotoBrowserTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +64,8 @@
 				682571761A37150B00F117DF /* Images.xcassets */,
 				682571781A37150B00F117DF /* LaunchScreen.xib */,
 				6825716D1A37150B00F117DF /* Supporting Files */,
+				6825718F1A37164000F117DF /* WKPhotoBrowserLayout.swift */,
+				68E6510D1A371A5C00607011 /* WKPhotoBrowserCell.swift */,
 			);
 			path = WKPhotoBrowser;
 			sourceTree = "<group>";
@@ -91,23 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				6825716E1A37150B00F117DF /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		682571821A37150B00F117DF /* WKPhotoBrowserTests */ = {
-			isa = PBXGroup;
-			children = (
-				682571851A37150B00F117DF /* WKPhotoBrowserTests.swift */,
-				682571831A37150B00F117DF /* Supporting Files */,
-			);
-			path = WKPhotoBrowserTests;
-			sourceTree = "<group>";
-		};
-		682571831A37150B00F117DF /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				682571841A37150B00F117DF /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -132,24 +98,6 @@
 			productReference = 6825716A1A37150B00F117DF /* WKPhotoBrowser.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6825717E1A37150B00F117DF /* WKPhotoBrowserTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6825718C1A37150B00F117DF /* Build configuration list for PBXNativeTarget "WKPhotoBrowserTests" */;
-			buildPhases = (
-				6825717B1A37150B00F117DF /* Sources */,
-				6825717C1A37150B00F117DF /* Frameworks */,
-				6825717D1A37150B00F117DF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				682571811A37150B00F117DF /* PBXTargetDependency */,
-			);
-			name = WKPhotoBrowserTests;
-			productName = WKPhotoBrowserTests;
-			productReference = 6825717F1A37150B00F117DF /* WKPhotoBrowserTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -161,10 +109,6 @@
 				TargetAttributes = {
 					682571691A37150B00F117DF = {
 						CreatedOnToolsVersion = 6.1;
-					};
-					6825717E1A37150B00F117DF = {
-						CreatedOnToolsVersion = 6.1;
-						TestTargetID = 682571691A37150B00F117DF;
 					};
 				};
 			};
@@ -182,7 +126,6 @@
 			projectRoot = "";
 			targets = (
 				682571691A37150B00F117DF /* WKPhotoBrowser */,
-				6825717E1A37150B00F117DF /* WKPhotoBrowserTests */,
 			);
 		};
 /* End PBXProject section */
@@ -198,13 +141,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6825717D1A37150B00F117DF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -214,26 +150,12 @@
 			files = (
 				682571721A37150B00F117DF /* ViewController.swift in Sources */,
 				682571701A37150B00F117DF /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6825717B1A37150B00F117DF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				682571861A37150B00F117DF /* WKPhotoBrowserTests.swift in Sources */,
+				682571901A37164000F117DF /* WKPhotoBrowserLayout.swift in Sources */,
+				68E6510E1A371A5C00607011 /* WKPhotoBrowserCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		682571811A37150B00F117DF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 682571691A37150B00F117DF /* WKPhotoBrowser */;
-			targetProxy = 682571801A37150B00F117DF /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		682571731A37150B00F117DF /* Main.storyboard */ = {
@@ -352,40 +274,6 @@
 			};
 			name = Release;
 		};
-		6825718D1A37150B00F117DF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = WKPhotoBrowserTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WKPhotoBrowser.app/WKPhotoBrowser";
-			};
-			name = Debug;
-		};
-		6825718E1A37150B00F117DF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = WKPhotoBrowserTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WKPhotoBrowser.app/WKPhotoBrowser";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -405,14 +293,7 @@
 				6825718B1A37150B00F117DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		6825718C1A37150B00F117DF /* Build configuration list for PBXNativeTarget "WKPhotoBrowserTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6825718D1A37150B00F117DF /* Debug */,
-				6825718E1A37150B00F117DF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
