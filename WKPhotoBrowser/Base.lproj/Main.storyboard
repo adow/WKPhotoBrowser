@@ -47,26 +47,27 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="el3-aj-KnV">
                                                     <rect key="frame" x="10" y="10" width="280" height="280"/>
                                                     <subviews>
-                                                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G99-gP-uYU">
+                                                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" maximumZoomScale="10" translatesAutoresizingMaskIntoConstraints="NO" id="G99-gP-uYU">
                                                             <rect key="frame" x="0.0" y="0.0" width="280" height="280"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0PB-si-Fum">
-                                                                    <rect key="frame" x="0.0" y="113" width="280" height="54"/>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cards-round-dark-120" translatesAutoresizingMaskIntoConstraints="NO" id="gqP-3M-HAn">
+                                                                    <rect key="frame" x="90" y="90" width="100" height="100"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="height" constant="54" id="e4B-Zr-jla" userLabel="Height"/>
-                                                                        <constraint firstAttribute="width" constant="280" id="zG2-tj-7DR" userLabel="Width"/>
+                                                                        <constraint firstAttribute="width" constant="100" id="47y-fc-XvI"/>
+                                                                        <constraint firstAttribute="height" constant="100" id="PD1-VV-VGA"/>
                                                                     </constraints>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
+                                                                </imageView>
                                                             </subviews>
+                                                            <gestureRecognizers/>
                                                             <constraints>
-                                                                <constraint firstItem="0PB-si-Fum" firstAttribute="leading" secondItem="G99-gP-uYU" secondAttribute="leading" id="QfT-Ta-IcD" userLabel="left"/>
-                                                                <constraint firstAttribute="bottom" secondItem="0PB-si-Fum" secondAttribute="bottom" constant="113" id="WKL-i9-aR2" userLabel="bottom"/>
-                                                                <constraint firstAttribute="trailing" secondItem="0PB-si-Fum" secondAttribute="trailing" id="pYy-fe-DE3" userLabel="right"/>
-                                                                <constraint firstItem="0PB-si-Fum" firstAttribute="top" secondItem="G99-gP-uYU" secondAttribute="top" constant="113" id="uVx-DR-YJa" userLabel="top"/>
+                                                                <constraint firstAttribute="trailing" secondItem="gqP-3M-HAn" secondAttribute="trailing" constant="90" id="KOd-az-lzT" userLabel="right"/>
+                                                                <constraint firstAttribute="bottom" secondItem="gqP-3M-HAn" secondAttribute="bottom" constant="90" id="SMO-cM-P8l" userLabel="bottom"/>
+                                                                <constraint firstItem="gqP-3M-HAn" firstAttribute="leading" secondItem="G99-gP-uYU" secondAttribute="leading" constant="90" id="dFT-Kq-wky" userLabel="left"/>
+                                                                <constraint firstItem="gqP-3M-HAn" firstAttribute="top" secondItem="G99-gP-uYU" secondAttribute="top" constant="90" id="tC5-tX-bUj" userLabel="top"/>
                                                             </constraints>
+                                                            <connections>
+                                                                <outlet property="delegate" destination="f87-cx-sIa" id="v16-0h-QwO"/>
+                                                            </connections>
                                                         </scrollView>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -88,14 +89,14 @@
                                         </constraints>
                                         <size key="customSize" width="300" height="300"/>
                                         <connections>
+                                            <outlet property="imageView" destination="gqP-3M-HAn" id="HVv-jv-XW9"/>
+                                            <outlet property="imageViewConstraintBottom" destination="SMO-cM-P8l" id="3ZF-wP-12Y"/>
+                                            <outlet property="imageViewConstraintHeight" destination="PD1-VV-VGA" id="RtE-Oj-Ibo"/>
+                                            <outlet property="imageViewConstraintLeft" destination="dFT-Kq-wky" id="FYq-lH-MSQ"/>
+                                            <outlet property="imageViewConstraintRight" destination="KOd-az-lzT" id="pDy-ow-OMC"/>
+                                            <outlet property="imageViewConstraintTop" destination="tC5-tX-bUj" id="F2K-xU-Yvi"/>
+                                            <outlet property="imageViewConstraintWidth" destination="47y-fc-XvI" id="8PM-Rl-bOP"/>
                                             <outlet property="scrollView" destination="G99-gP-uYU" id="26m-1s-bf9"/>
-                                            <outlet property="titleConstraintBottom" destination="WKL-i9-aR2" id="YHE-5h-Hux"/>
-                                            <outlet property="titleConstraintHeight" destination="e4B-Zr-jla" id="IIW-ps-xvu"/>
-                                            <outlet property="titleConstraintLeft" destination="QfT-Ta-IcD" id="jTq-i1-IxF"/>
-                                            <outlet property="titleConstraintRight" destination="pYy-fe-DE3" id="7Is-bi-2UI"/>
-                                            <outlet property="titleConstraintTop" destination="uVx-DR-YJa" id="fwn-NC-SdN"/>
-                                            <outlet property="titleConstraintWidth" destination="zG2-tj-7DR" id="epj-JZ-hNe"/>
-                                            <outlet property="titleLabel" destination="0PB-si-Fum" id="f6A-Sc-n45"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -121,4 +122,7 @@
             <point key="canvasLocation" x="394" y="363"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cards-round-dark-120" width="120" height="120"/>
+    </resources>
 </document>

@@ -28,7 +28,10 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
     }
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("photo-cell", forIndexPath: indexPath) as WKPhotoBrowserCell
-        cell.titleLabel.text = "cell - \(indexPath.row)"
+        cell.collectionViewOnwer = collectionView
+//        cell.titleLabel.text = "cell - \(indexPath.row)"
+        cell.imageView.image = UIImage(named: "original")
+        cell.layoutIfNeeded()
         return cell
     }
 
