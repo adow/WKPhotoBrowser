@@ -14,12 +14,72 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Hgd-9z-Gta" kind="relationship" relationship="rootViewController" id="asv-y2-1Sz"/>
+                        <segue destination="5vg-nZ-11B" kind="relationship" relationship="rootViewController" id="v5C-1K-H83"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="meH-q9-NNk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-328" y="363"/>
+        </scene>
+        <!--Photos-->
+        <scene sceneID="Inp-0H-QIk">
+            <objects>
+                <viewController id="5vg-nZ-11B" customClass="WKPhotoBrowserListViewController" customModule="WKPhotoBrowser" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gah-dQ-Rue"/>
+                        <viewControllerLayoutGuide type="bottom" id="hTA-je-3XG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GRM-O5-QVX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="k2o-IM-GEr">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewLayout key="collectionViewLayout" id="j0J-Fg-rZB" customClass="WKPhotoBrowserListLayout" customModule="WKPhotoBrowser" customModuleProvider="target"/>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="photo-cell" id="NEW-YR-yEu" customClass="WKPhotoBrowserListCell" customModule="WKPhotoBrowser" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cards-round-dark-120" translatesAutoresizingMaskIntoConstraints="NO" id="fyR-MG-mrJ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <size key="customSize" width="100" height="100"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="fyR-MG-mrJ" id="86E-q6-utA"/>
+                                            <segue destination="Hgd-9z-Gta" kind="show" id="cVd-0d-UDQ"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="5vg-nZ-11B" id="Xld-wm-egB"/>
+                                    <outlet property="delegate" destination="5vg-nZ-11B" id="qdQ-ky-LPC"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="k2o-IM-GEr" firstAttribute="leading" secondItem="GRM-O5-QVX" secondAttribute="leadingMargin" constant="-16" id="9E7-8O-Dye"/>
+                            <constraint firstItem="hTA-je-3XG" firstAttribute="top" secondItem="k2o-IM-GEr" secondAttribute="bottom" id="WiL-QU-ZZQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="k2o-IM-GEr" secondAttribute="trailing" constant="-16" id="eVs-Rg-Jjr"/>
+                            <constraint firstItem="k2o-IM-GEr" firstAttribute="top" secondItem="GRM-O5-QVX" secondAttribute="topMargin" id="xU5-hg-p7L"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Photos" id="u5a-Yq-I7o"/>
+                    <connections>
+                        <outlet property="collectionView" destination="k2o-IM-GEr" id="bNP-PD-Spb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C4A-jo-oyl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-328" y="1087"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="iYn-Pr-pzD">
@@ -116,10 +176,13 @@
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="D69-DH-yZD"/>
+                    <connections>
+                        <outlet property="collectionView" destination="E6O-7H-YC3" id="IyF-wg-YI4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f7h-ud-S2t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="394" y="363"/>
+            <point key="canvasLocation" x="400" y="1087"/>
         </scene>
     </scenes>
     <resources>

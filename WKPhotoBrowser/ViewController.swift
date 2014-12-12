@@ -18,9 +18,21 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
         }
         return images
     }()
+    var photoIndex:Int!
+    @IBOutlet weak var collectionView:UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.collectionView.hidden = true
+    }
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+//        self.collectionView.scrollToItemAtIndexPath(NSIndexPath(forItem: self.photoIndex, inSection: 0), atScrollPosition: UICollectionViewScrollPosition.CenteredHorizontally, animated: false)
+    }
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        self.collectionView.scrollToItemAtIndexPath(NSIndexPath(forItem: self.photoIndex, inSection: 0), atScrollPosition: UICollectionViewScrollPosition.CenteredHorizontally, animated: false)
+        self.collectionView.hidden = false
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,7 +48,7 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
     }
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("photo-cell", forIndexPath: indexPath) as WKPhotoBrowserCell
-        cell.layoutIfNeeded()
+        cell.layoutIfNeeded() ///要先调用一次layoutIfNeeded()，否则开始的几个cell的宽度还没有改变
         cell.collectionViewOnwer = collectionView
 //        cell.titleLabel.text = "cell - \(indexPath.row)"
 //        cell.imageView.image = UIImage(named: "original")

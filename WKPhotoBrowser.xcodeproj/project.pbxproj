@@ -14,6 +14,9 @@
 		6825717A1A37150B00F117DF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 682571781A37150B00F117DF /* LaunchScreen.xib */; };
 		682571901A37164000F117DF /* WKPhotoBrowserLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6825718F1A37164000F117DF /* WKPhotoBrowserLayout.swift */; };
 		68E6510E1A371A5C00607011 /* WKPhotoBrowserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E6510D1A371A5C00607011 /* WKPhotoBrowserCell.swift */; };
+		68EF91471A3B2E640008DDCB /* WKPhotoBrowserListLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EF91461A3B2E640008DDCB /* WKPhotoBrowserListLayout.swift */; };
+		68EF91491A3B32550008DDCB /* WKPhotoBrowserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EF91481A3B32550008DDCB /* WKPhotoBrowserListViewController.swift */; };
+		68EF914B1A3B36580008DDCB /* WKPhotoBrowserListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EF914A1A3B36580008DDCB /* WKPhotoBrowserListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		682571791A37150B00F117DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6825718F1A37164000F117DF /* WKPhotoBrowserLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKPhotoBrowserLayout.swift; sourceTree = "<group>"; };
 		68E6510D1A371A5C00607011 /* WKPhotoBrowserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKPhotoBrowserCell.swift; sourceTree = "<group>"; };
+		68EF91461A3B2E640008DDCB /* WKPhotoBrowserListLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKPhotoBrowserListLayout.swift; sourceTree = "<group>"; };
+		68EF91481A3B32550008DDCB /* WKPhotoBrowserListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKPhotoBrowserListViewController.swift; sourceTree = "<group>"; };
+		68EF914A1A3B36580008DDCB /* WKPhotoBrowserListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKPhotoBrowserListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,9 @@
 				6825716D1A37150B00F117DF /* Supporting Files */,
 				6825718F1A37164000F117DF /* WKPhotoBrowserLayout.swift */,
 				68E6510D1A371A5C00607011 /* WKPhotoBrowserCell.swift */,
+				68EF91461A3B2E640008DDCB /* WKPhotoBrowserListLayout.swift */,
+				68EF91481A3B32550008DDCB /* WKPhotoBrowserListViewController.swift */,
+				68EF914A1A3B36580008DDCB /* WKPhotoBrowserListCell.swift */,
 			);
 			path = WKPhotoBrowser;
 			sourceTree = "<group>";
@@ -148,9 +157,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68EF914B1A3B36580008DDCB /* WKPhotoBrowserListCell.swift in Sources */,
 				682571721A37150B00F117DF /* ViewController.swift in Sources */,
+				68EF91471A3B2E640008DDCB /* WKPhotoBrowserListLayout.swift in Sources */,
 				682571701A37150B00F117DF /* AppDelegate.swift in Sources */,
 				682571901A37164000F117DF /* WKPhotoBrowserLayout.swift in Sources */,
+				68EF91491A3B32550008DDCB /* WKPhotoBrowserListViewController.swift in Sources */,
 				68E6510E1A371A5C00607011 /* WKPhotoBrowserCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
