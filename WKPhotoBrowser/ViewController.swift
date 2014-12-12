@@ -10,6 +10,14 @@ import UIKit
 
 class ViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate {
 
+    lazy var photos:[UIImage] = {
+        var images = [UIImage]()
+        for a in 0...14 {
+            let image = UIImage(named:"\(a)")
+            images.append(image!)
+        }
+        return images
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -24,14 +32,17 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
 //        return 1
 //    }
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 30
+        return self.photos.count
     }
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("photo-cell", forIndexPath: indexPath) as WKPhotoBrowserCell
+        cell.layoutIfNeeded()
         cell.collectionViewOnwer = collectionView
 //        cell.titleLabel.text = "cell - \(indexPath.row)"
-        cell.imageView.image = UIImage(named: "original")
-        cell.layoutIfNeeded()
+//        cell.imageView.image = UIImage(named: "original")
+        cell.imageView.image = self.photos[indexPath.row]
+
+        cell.setupConstraints()
         return cell
     }
 
