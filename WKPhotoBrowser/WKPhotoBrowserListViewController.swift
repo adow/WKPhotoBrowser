@@ -18,6 +18,7 @@ class WKPhotoBrowserListViewController: UIViewController,UICollectionViewDataSou
         return images
         }()
     @IBOutlet weak var collectionView:UICollectionView!
+    weak var snapView:UIView?
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -69,8 +70,9 @@ class WKPhotoBrowserListViewController: UIViewController,UICollectionViewDataSou
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(cell_identifier, forIndexPath: indexPath) as WKPhotoBrowserListCell
         let image = self.photos[indexPath.row];
-        let square = self.make_square_image(image, width: 100.0)
-        cell.imageView.image = square
+//        let square = self.make_square_image(image, width: 100.0)
+//        cell.imageView.image = square
+        cell.imageView.image = image
         return cell
     }
     // MARK: - Navigation
@@ -79,7 +81,16 @@ class WKPhotoBrowserListViewController: UIViewController,UICollectionViewDataSou
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        let browserViewController = segue.destinationViewController as ViewController
+        let indexPath = self.collectionView.indexPathsForSelectedItems()![0] as NSIndexPath
+        let cell = self.collectionView.cellForItemAtIndexPath(indexPath)
+        self.snapView = cell!.snapshotViewAfterScreenUpdates(true)
+//        self.snapView!.frame = cell!.convertRect(cell!.frame, toView: self.view)
+        let top = cell!.frame.origin.y + 128.0 + self.collectionView.contentOffset.y
+        var rect = cell!.frame
+        rect.origin.y = top
+        self.snapView!.frame = rect
+        let navigationController = segue.destinationViewController as UINavigationController
+        let browserViewController = navigationController.childViewControllers[0] as ViewController
         browserViewController.photoIndex = (self.collectionView.indexPathsForSelectedItems()![0] as NSIndexPath).row
     }
 

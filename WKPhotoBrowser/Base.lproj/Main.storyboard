@@ -45,7 +45,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cards-round-dark-120" translatesAutoresizingMaskIntoConstraints="NO" id="fyR-MG-mrJ">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="fyR-MG-mrJ">
                                                     <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                 </imageView>
                                             </subviews>
@@ -54,7 +54,7 @@
                                         <size key="customSize" width="100" height="100"/>
                                         <connections>
                                             <outlet property="imageView" destination="fyR-MG-mrJ" id="86E-q6-utA"/>
-                                            <segue destination="Hgd-9z-Gta" kind="show" id="cVd-0d-UDQ"/>
+                                            <segue destination="5QN-kE-eHW" kind="presentation" id="YjY-je-2B4"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -79,7 +79,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C4A-jo-oyl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-328" y="1087"/>
+            <point key="canvasLocation" x="410" y="363"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="iYn-Pr-pzD">
@@ -95,6 +95,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="E6O-7H-YC3">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewLayout key="collectionViewLayout" id="B3N-3K-H2g" customClass="WKPhotoBrowserLayout" customModule="WKPhotoBrowser" customModuleProvider="target"/>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="photo-cell" id="f87-cx-sIa" customClass="WKPhotoBrowserCell" customModule="WKPhotoBrowser" customModuleProvider="target">
@@ -175,17 +176,41 @@
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
-                    <navigationItem key="navigationItem" id="D69-DH-yZD"/>
+                    <navigationItem key="navigationItem" id="D69-DH-yZD">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="7sH-va-Ol5">
+                            <connections>
+                                <action selector="onButtonCancel:" destination="Hgd-9z-Gta" id="8s0-pS-vFy"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="3BP-PH-nZz"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="E6O-7H-YC3" id="IyF-wg-YI4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f7h-ud-S2t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="400" y="1087"/>
+            <point key="canvasLocation" x="1120" y="1087"/>
+        </scene>
+        <!--Photo Browser Navigation View Controller-->
+        <scene sceneID="ZcN-7A-k1y">
+            <objects>
+                <navigationController id="5QN-kE-eHW" customClass="WKPhotoBrowserNavigationViewController" customModule="WKPhotoBrowser" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ju7-jU-n9p">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Hgd-9z-Gta" kind="relationship" relationship="rootViewController" id="wWX-2L-GaJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aTi-jq-9Ae" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="410" y="1087"/>
         </scene>
     </scenes>
     <resources>
+        <image name="3" width="2448" height="2448"/>
         <image name="cards-round-dark-120" width="120" height="120"/>
     </resources>
 </document>
